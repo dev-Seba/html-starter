@@ -4,18 +4,15 @@ main {
 }
 section.hero {
   padding-top: 10vh;
-  height: 70vh;
-  color: black;
+  height: 100vh;
+  color: white;
   text-align: center;
-  background-image: url('https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-7qf67r-kamienica-przy-wilenskiej-31-5662396/20220222_TVN_Kamienica+10.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+ 
 }
 section.hero h1 {
   margin: 0;
   font-optical-sizing: auto;
-  font-size: xx-large;
+  font-size: 4em;
   font-weight: 100;
   font-style: normal;
 }
@@ -40,9 +37,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  background-image: url('https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-7qf67r-kamienica-przy-wilenskiej-31-5662396/20220222_TVN_Kamienica+10.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .gradient {
-background: linear-gradient(270deg, #ff0000, #000000);
+background: linear-gradient(270deg, #ff0000, rgba(0, 0, 0, 0.5));
 background-size: 400% 400%;
 
 -webkit-animation: AnimationName 0s ease infinite;
@@ -65,30 +66,41 @@ animation: AnimationName 0s ease infinite;
 50%{background-position:100% 50%}
 100%{background-position:0% 50%}
 }
-section.newsletter{
+.newsletter{
+    margin-top: 20vh;
     width: 100%;
     height: 20vh;
-    background-color: greenyellow;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-section.newsletter form {
-    background-color: greenyellow;
+.newsletter form {
+    display: flex;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 12px 0px rgb(0, 0, 0)
 }
 
-section.newsletter form input,
-section.newsletter form button {
+.newsletter form input,
+.newsletter form button {
     appearance: none;
     font-family: "Poppins", sans-serif;
     border: 1px solid black;
     border-radius: 3px;
-    height: 20px;
     padding: 3px;
-    background-color: #37afffd5;
-    outline: none
+    font-size: 10px;
+    background-color: #d1d3d4;
+    outline: none;
+    text-transform: uppercase;
 }
 
-section.newsletter form button {
-    line-height: 20px;
+.newsletter form button {
+    padding: 0 10px;
+    font-size: 10px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #343131;  
+    color: #d1d3d4;
+}
+.newsletter form input{
+    border-radius: 5px 0px 0px 5px;
 }
