@@ -47,9 +47,9 @@ body {
 background: linear-gradient(270deg, #ff0000, rgba(0, 0, 0, 0.5));
 background-size: 400% 400%;
 
--webkit-animation: AnimationName 0s ease infinite;
--moz-animation: AnimationName 0s ease infinite;
-animation: AnimationName 0s ease infinite;
+-webkit-animation: AnimationName 1s ease infinite;
+-moz-animation: AnimationName 3s ease infinite;
+animation: AnimationName 1s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -103,6 +103,8 @@ animation: AnimationName 0s ease infinite;
     background-color: #343131;  
     color: #d1d3d4;
     appearance: none;
+    transition: all;
+    animation-duration: 5s;
 }
 .newsletter form input{
     border-radius: 5px 0px 0px 5px;
