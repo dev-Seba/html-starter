@@ -4,10 +4,9 @@ main {
 }
 section.hero {
   padding-top: 10vh;
-  height: 100vh;
+  height: 70vh;
   color: black;
   text-align: center;
-  font-family: "Poppins", sans-serif;
   background-image: url('https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-7qf67r-kamienica-przy-wilenskiej-31-5662396/20220222_TVN_Kamienica+10.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,6 +39,7 @@ section.hero img {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 .gradient {
 background: linear-gradient(270deg, #ff0000, #000000);
@@ -64,4 +64,31 @@ animation: AnimationName 0s ease infinite;
 0%{background-position:0% 50%}
 50%{background-position:100% 50%}
 100%{background-position:0% 50%}
+}
+section.newsletter{
+    width: 100%;
+    height: 20vh;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+section.newsletter form {
+    background-color: greenyellow;
+}
+
+section.newsletter form input,
+section.newsletter form button {
+    appearance: none;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 20px;
+    padding: 3px;
+    background-color: #37afffd5;
+    outline: none
+}
+
+section.newsletter form button {
+    line-height: 20px;
 }
