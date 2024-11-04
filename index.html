@@ -11,18 +11,43 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
       main {
-        padding: 10px;
-        height: 80vh;
+        height: 100vh;
       }
       section.hero {
         padding-top: 10vh;
+        height: 100vh;
         color: white;
         text-align: center;
         font-family: "Poppins", sans-serif;
+        background-image: url('wesela.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+      }
+      section.hero h1 {
+        margin: 0;
+        font-optical-sizing: auto;
+        font-size: xx-large;
         font-weight: 100;
         font-style: normal;
-
       }
+      section.hero span {
+        font-weight: 300;
+        font-size: smaller;
+        font-style: normal;
+        text-transform: uppercase;
+      }
+
+      section.hero img {
+        margin: 50px;
+        width: 70vh;
+        border: 2px solid #ffffff;
+        border-radius: 15px;
+        -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        box-shadow: 8px 8px 12px 0px rgb(0, 0, 0);
+      }
+
       body {
         margin: 0;
         padding: 0;
@@ -51,27 +76,7 @@
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-section.hero h1 {
-  font-weight: 100;
-  font-style: normal;
-  font-size: xx-large;
-  font-optical-sizing: auto;
-  margin: 0;
-}
-section.hero span{
-  font-weight: 300;
-  font-size: smaller;
-  font-style: normal;
-  text-transform: uppercase;
-}
-section.hero img{
-  width: 70vh;
-  border-radius: 20px;
-  border: 2px solid white;
-  -webkit-box-shadow: 20px 8px 24px 0px rgb(0, 0, 0);
-  -moz-box-shadow: 29px 8px 24px 0px rgb(0, 0, 0);
-  box-shadow: 20px 20px 24px 0px rgb(1, 1, 1);
-}
+
     </style>
   </head>
   <body>
@@ -79,7 +84,6 @@ section.hero img{
       <section class="hero">
       <h1>Hotel Mariott</h1>
       <span>Twoje miejsce na wypoczynek</span>
-      <img src="1.jpg" alt="zdjecie meliny">
     </section>
     </main>
   </body>
